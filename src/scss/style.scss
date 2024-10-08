@@ -57,8 +57,24 @@ body {
 
           &-rating {
             font-size: 14px;
+            display: flex;
+
             .nb-reviews {
               color: #007185;
+            }
+
+            .rating-stars {
+              display: inline-block;
+              height: 18px;
+              width: 80px;
+              background-size: 512px 512px;
+              background-image: url(/src/images/sprite.png);
+              background-repeat: no-repeat;
+              margin: 0 2px;
+
+              &-n45 {
+                background-position: -2px -42px;
+              }
             }
           }
 
