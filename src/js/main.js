@@ -17,9 +17,9 @@ fetch('products.json')
     }).catch(error => console.error('Error fetching JSON:', error));
 
 function displayProduct(productDiv, product) {
-    console.log(product);
-    const oldPriceHTML = product.price.old_price ? `<span class="old-price"><del>${product.price.old_price}</del></span>` : '';
-    const currentPriceHTML = product.price.price ? `<span class="current-price">${product.price.price}</span>` : '';
+    const oldPriceHTML = product.price.old_price ? `<span class="old-price"><del>${roundToTwoDecimals(product.price.old_price)}</del></span>` : '';
+    const currentPriceHTML = product.price.price ? `<span class="current-price">${roundToTwoDecimals(product.price.price)}</span>` : '';
+    let rating = ratingAlign(roundToHalfStep(product.rating) + '');
 
 
 
@@ -31,7 +31,7 @@ function displayProduct(productDiv, product) {
                     <div class="product-content">
                         <div class="product-content-title">${product.name}</div>
 <!--                        <div class="product-content-brand"></div>-->
-                        <div class="product-content-rating">${product.rating} <span class="rating-stars rating-stars-n${product.rating}"></span><span class="nb-reviews">(${product.nb_reviews})</span></div>
+                        <div class="product-content-rating product-content-rating-r${product.rating}">${product.rating} <span class="rating-stars rating-stars-n${rating}"></span><span class="nb-reviews nb-reviews-${product.nb_reviews}">(${product.nb_reviews})</span></div>
                         <div class="product-content-price">${currentPriceHTML} ${oldPriceHTML}</div>
                     </div>
                 </div>
@@ -50,3 +50,14 @@ function displayJsonInfo(jsonData) {
     }
 }
 
+function roundToHalfStep(num) {
+    return Math.round(num * 2) / 2;
+}
+
+function roundToTwoDecimals(price) {
+    return price.toFixed(2);
+}
+
+function ratingAlign(rating){
+    return rating.replace('.', '-');
+}
