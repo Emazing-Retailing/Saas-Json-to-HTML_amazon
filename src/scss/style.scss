@@ -1,9 +1,10 @@
+
 body {
   color: rgb(15, 17, 17);
 }
 
 
-#app {
+
   img {
     max-width: 100%;
   }
@@ -89,27 +90,38 @@ body {
           &-title {
             margin-bottom: 6px;
             font-weight: 400;
-            font-size: 14px;
-
+            font-size: 16px;
             overflow: hidden;
             text-overflow: ellipsis;
             display: -webkit-box;
             -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
+            cursor: pointer;
 
             &:hover {
               color: #c7511f;
             }
           }
 
+          &-brand {
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 6px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+          }
+
+          &-rating-0 {
+            display: none !important;
+          }
+
           &-rating {
             font-size: 14px;
             display: flex;
             align-items: center;
-
-            &-r0 {
-              display: none !important;
-            }
 
             .nb-reviews {
               color: #007185;
@@ -123,51 +135,50 @@ body {
               background-image: url(./images/sprite.png);
               background-repeat: no-repeat;
               margin: 0 2px;
+            }
 
+            .rating-stars-5 {
+              background-position: -2px -2px;
+            }
 
-              &-n5 {
-                background-position: -2px -2px;
-              }
+            .rating-stars-45 {
+              background-position: -2px -42px;
+            }
 
-              &-n4-5 {
-                background-position: -2px -42px;
-              }
+            .rating-stars-4 {
+              background-position: -2px -22px;
+            }
 
-              &-n4 {
-                background-position: -2px -22px;
-              }
+            .rating-stars-35 {
+              background-position: -2px -82px;
+            }
 
-              &-n3-5 {
-                background-position: -2px -82px;
-              }
+            .rating-stars-3 {
+              background-position: -2px -62px;
+            }
 
-              &-n3 {
-                background-position: -2px -62px;
-              }
+            .rating-stars-25 {
+              background-position: -2px -122px;
+            }
 
-              &-n2-5 {
-                background-position: -2px -122px;
-              }
+            .rating-stars-2 {
+              background-position: -2px -102px;
+            }
 
-              &-n2 {
-                background-position: -2px -102px;
-              }
+            .rating-stars-15 {
+              background-position: -2px -162px;
+            }
 
-              &-n1-5 {
-                background-position: -2px -162px;
-              }
+            .rating-stars-1 {
+              background-position: -2px -142px;
+            }
 
-              &-n1 {
-                background-position: -2px -142px;
-              }
+            .rating-stars-05 {
+              background-position: -2px -202px;
+            }
 
-              &-n0-5 {
-                background-position: -2px -202px;
-              }
-
-              &-n0 {
-               display: none !important;
-              }
+            .rating-stars-0 {
+              display: none !important;
             }
           }
 
@@ -175,6 +186,11 @@ body {
             .current-price {
               font-size: 28px;
               color: #0f1111;
+
+              sup {
+                font-size: 13px;
+                top: -.75em;
+              }
             }
 
             .old-price {
@@ -188,4 +204,5 @@ body {
     }
   }
 
-}
+
+@import "components/responsive";
