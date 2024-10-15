@@ -15,6 +15,18 @@
 <body>
 <div id="app">
     <header id="header">
+        <div class="top-header">
+            <a class="brand-logo" href="#">
+                <img src="/images/general/white-logo.png" alt="">
+            </a>
+            <a class="store-cart" href="#">
+                <span class="cart-icon-wrapper">
+                    <span class="cart-products-count">0</span>
+                     <span class="cart-icon"></span>
+                </span>
+                <span class="cart-text">Cart</span>
+            </a>
+        </div>
         <div class="products-count-bar">
             <div class="container-fluid">
                 Showing 1 to <span id="current-qty-products">44</span> of <span id="all-qty-products">89</span> results
@@ -25,94 +37,95 @@
         <div class="container-fluid">
             <div class="col-lg-10 mx-auto">
                 <div class="row">
-                    <div id="sidebar-wrap" class="col-md-2">
-                        <div id="sidebar" class="product-filters">
-                            <!--                        -->
-                            <div class="filter-item filter-by-rating">
-                                <div class="filter-title">
-                                    Reviews
-                                </div>
-                                <div class="filter-content">
-                                    <div class="filter-content-item filter-content-item-default">
-                                    <span class="filter-content-item-text">
-                                        All reviews
-                                    </span>
-                                    </div>
-                                    <div class="filter-content-item">
-                                        <span class="filter-content-item-img 5-stars"></span>
-                                        <span class="filter-content-item-text">
-                                        5
-                                    </span>
-                                    </div>
-                                    <div class="filter-content-item">
-                                        <span class="filter-content-item-img 4-stars"></span>
-                                        <span class="filter-content-item-text">
-                                        4
-                                    </span>
-                                    </div>
-                                    <div class="filter-content-item">
-                                        <span class="filter-content-item-img 3-stars"></span>
-                                        <span class="filter-content-item-text">
-                                        3
-                                    </span>
-                                    </div>
-                                    <div class="filter-content-item">
-                                        <span class="filter-content-item-img 2-stars"></span>
-                                        <span class="filter-content-item-text">
-                                        2
-                                    </span>
-                                    </div>
-                                    <div class="filter-content-item">
-                                        <span class="filter-content-item-img 1-stars"></span>
-                                        <span class="filter-content-item-text">
-                                        1
-                                    </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--                            -->
-                            <div class="filter-item filter-by-price">
-                                <div class="filter-title">
-                                    Price
-                                </div>
-                                <div class="filter-content">
-                                    <div class="filter-content-item filter-content-item-default">
-                                    <span class="filter-content-item-text">
-                                        All prices
-                                    </span>
-                                    </div>
-                                    <div class="filter-content-item">
-                                    <span class="filter-content-item-text">
-                                        < <span class="currency">$</span>10
-                                    </span>
-                                    </div>
-                                    <div class="filter-content-item">
-                                    <span class="filter-content-item-text">
-                                        <span class="currency">$</span>10-20
-                                    </span>
-                                    </div>
-                                    <div class="filter-content-item">
-                                    <span class="filter-content-item-text">
-                                        <span class="currency">$</span>20-50
-                                    </span>
-                                    </div>
-                                    <div class="filter-content-item">
-                                    <span class="filter-content-item-text">
-                                        <span class="currency">$</span>50-100
-                                    </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!--                    <div id="sidebar-wrap" class="col-md-2">-->
+                    <!--                        <div id="sidebar" class="product-filters">-->
+                    <!--                            &lt;!&ndash;                        &ndash;&gt;-->
+                    <!--                            <div class="filter-item filter-by-rating">-->
+                    <!--                                <div class="filter-title">-->
+                    <!--                                    Reviews-->
+                    <!--                                </div>-->
+                    <!--                                <div class="filter-content">-->
+                    <!--                                    <div class="filter-content-item filter-content-item-default">-->
+                    <!--                                    <span class="filter-content-item-text">-->
+                    <!--                                        All reviews-->
+                    <!--                                    </span>-->
+                    <!--                                    </div>-->
+                    <!--                                    <div class="filter-content-item">-->
+                    <!--                                        <span class="filter-content-item-img 5-stars"></span>-->
+                    <!--                                        <span class="filter-content-item-text">-->
+                    <!--                                        5-->
+                    <!--                                    </span>-->
+                    <!--                                    </div>-->
+                    <!--                                    <div class="filter-content-item">-->
+                    <!--                                        <span class="filter-content-item-img 4-stars"></span>-->
+                    <!--                                        <span class="filter-content-item-text">-->
+                    <!--                                        4-->
+                    <!--                                    </span>-->
+                    <!--                                    </div>-->
+                    <!--                                    <div class="filter-content-item">-->
+                    <!--                                        <span class="filter-content-item-img 3-stars"></span>-->
+                    <!--                                        <span class="filter-content-item-text">-->
+                    <!--                                        3-->
+                    <!--                                    </span>-->
+                    <!--                                    </div>-->
+                    <!--                                    <div class="filter-content-item">-->
+                    <!--                                        <span class="filter-content-item-img 2-stars"></span>-->
+                    <!--                                        <span class="filter-content-item-text">-->
+                    <!--                                        2-->
+                    <!--                                    </span>-->
+                    <!--                                    </div>-->
+                    <!--                                    <div class="filter-content-item">-->
+                    <!--                                        <span class="filter-content-item-img 1-stars"></span>-->
+                    <!--                                        <span class="filter-content-item-text">-->
+                    <!--                                        1-->
+                    <!--                                    </span>-->
+                    <!--                                    </div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                    <!--                            &lt;!&ndash;                            &ndash;&gt;-->
+                    <!--                            <div class="filter-item filter-by-price">-->
+                    <!--                                <div class="filter-title">-->
+                    <!--                                    Price-->
+                    <!--                                </div>-->
+                    <!--                                <div class="filter-content">-->
+                    <!--                                    <div class="filter-content-item filter-content-item-default">-->
+                    <!--                                    <span class="filter-content-item-text">-->
+                    <!--                                        All prices-->
+                    <!--                                    </span>-->
+                    <!--                                    </div>-->
+                    <!--                                    <div class="filter-content-item">-->
+                    <!--                                    <span class="filter-content-item-text">-->
+                    <!--                                        < <span class="currency">$</span>10-->
+                    <!--                                    </span>-->
+                    <!--                                    </div>-->
+                    <!--                                    <div class="filter-content-item">-->
+                    <!--                                    <span class="filter-content-item-text">-->
+                    <!--                                        <span class="currency">$</span>10-20-->
+                    <!--                                    </span>-->
+                    <!--                                    </div>-->
+                    <!--                                    <div class="filter-content-item">-->
+                    <!--                                    <span class="filter-content-item-text">-->
+                    <!--                                        <span class="currency">$</span>20-50-->
+                    <!--                                    </span>-->
+                    <!--                                    </div>-->
+                    <!--                                    <div class="filter-content-item">-->
+                    <!--                                    <span class="filter-content-item-text">-->
+                    <!--                                        <span class="currency">$</span>50-100-->
+                    <!--                                    </span>-->
+                    <!--                                    </div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
                     <!--                -->
-                    <div id="products-wrap" class="col-md-10">
+                    <div id="products-wrap" class="col-md-12">
                         <div id="products" class="row products-per-row-4">
                             <div class="h4">Result</div>
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81uVSPlGVQL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81uVSPlGVQL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Spontex Éponge 3 Pièces</div>
@@ -129,7 +142,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/91lkXDLnOxL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/91lkXDLnOxL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Lampa Éponge Utilitaire 37100, Marron, idéale
@@ -148,10 +162,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81yd17TIZjL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81yd17TIZjL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">Spontex Lot de 2 éponges à Vaisselle Anti-Rayures
+                                        <div class="product-content-title">Spontex Lot de 2 éponges à Vaisselle
+                                            Anti-Rayures
                                             et absorbantes
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -167,7 +183,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81BpSxM3C3L._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81BpSxM3C3L._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">SPONTEX - Eponge Fini les efforts - 2 éponges
@@ -186,10 +203,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/71ivS7nAweL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/71ivS7nAweL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">Spontex Gratte-éponge, super efficace, végétales
+                                        <div class="product-content-title">Spontex Gratte-éponge, super efficace,
+                                            végétales
                                             - Les 3 éponges
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -205,10 +224,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/51R5Q96rb4L._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/51R5Q96rb4L._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">Monoprix Eponges végétales récurantes, spécial
+                                        <div class="product-content-title">Monoprix Eponges végétales récurantes,
+                                            spécial
                                             Surfaces encrassées - Le Lot de 2
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -224,7 +245,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/51wpIjVSFwL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/51wpIjVSFwL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Monoprix Eponges végétales grattantes douces
@@ -243,7 +265,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/61qc3Jm+ycL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/61qc3Jm+ycL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Spontex Eponge spontex, gratte-éponge +
@@ -262,7 +285,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/61q-NvkCZtL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/61q-NvkCZtL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Monoprix Eponges végétales grattantes multi
@@ -281,7 +305,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/619kxVzlTcL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/619kxVzlTcL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Monoprix Eponges végétales grand modèle - Le
@@ -300,10 +325,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/71duZp7SjhL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/71duZp7SjhL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">MR.SIGA Éponge grattante Multi-Usage pour Usage
+                                        <div class="product-content-title">MR.SIGA Éponge grattante Multi-Usage pour
+                                            Usage
                                             intensif. Dimensions 11 x 7 x 3 cm (4.3’’ x 2.8’’ x 1.2’’). Lot de 12.
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -319,10 +346,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/51AVwkbj7XL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/51AVwkbj7XL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">Spontex Eponges Trio Colors Ergonomiques par 3
+                                        <div class="product-content-title">Spontex Eponges Trio Colors Ergonomiques par
+                                            3
                                             (Lot de 6 Soit 18 éponges
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -338,10 +367,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81TRw0bjtQL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81TRw0bjtQL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">Scrub Daddy/Mommy Rose Éponge Vaisselle Lavable
+                                        <div class="product-content-title">Scrub Daddy/Mommy Rose Éponge Vaisselle
+                                            Lavable
                                             Anti Scratch Double Face, Cuisine et Salle de Bain, Anti-Rayures,
                                             Antibactérienne et Réutilisable, Grattante Flextexture, Lot de 2
                                         </div>
@@ -358,7 +389,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/6109INKBk+L._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/6109INKBk+L._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">18Pack éponges Magiques, Gomme Magique Extra
@@ -379,7 +411,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/51yqJjJ1UCL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/51yqJjJ1UCL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">SAVY Éponge gros travaux 160x100x55mm</div>
@@ -396,10 +429,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/810FXViNASL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/810FXViNASL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">éponge Vaisselle Lavable, 6 tampons grattants Non
+                                        <div class="product-content-title">éponge Vaisselle Lavable, 6 tampons grattants
+                                            Non
                                             rayants Double Face La Cuisine antibactérienne en Microfibre éponge nettoie
                                             efficacement Toutes Les Surfaces. Idéale pour plaques, vers la beauté
                                         </div>
@@ -416,10 +451,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/813-9zNgydL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/813-9zNgydL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">Spontex - Gratte-Eponge Stop-Graisse - 2 éponges
+                                        <div class="product-content-title">Spontex - Gratte-Eponge Stop-Graisse - 2
+                                            éponges
                                             grattantes vertes protection anti-graisse
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -435,7 +472,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81LdWT--WsL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81LdWT--WsL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Spontex Sweet Home éponge Kit pour toute la
@@ -454,10 +492,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/8172YkvgKHL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/8172YkvgKHL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">SPONTEX - Flash Eponge - 2 éponges non-rayantes
+                                        <div class="product-content-title">SPONTEX - Flash Eponge - 2 éponges
+                                            non-rayantes
                                             spéciales plaques et poêles
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -473,11 +513,14 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81OjpMH2wRL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81OjpMH2wRL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">STARWAX - éponges microfibres x2 - utilisables
-                                            pour toutes les surfaces de la maison -Absorbantes, résistantes et essuyantes -
+                                        <div class="product-content-title">STARWAX - éponges microfibres x2 -
+                                            utilisables
+                                            pour toutes les surfaces de la maison -Absorbantes, résistantes et
+                                            essuyantes -
                                             dépoussiérer - nettoyer sans rayer - fibres en polyester et polyamide
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -493,7 +536,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/817lqK3cgvL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/817lqK3cgvL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">MR.SIGA Éponge à Récurer en Cellulose
@@ -512,7 +556,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81kjbIzZmmL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81kjbIzZmmL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">WUHUIXOZ - Lot de 24 éponges de Nettoyage
@@ -531,7 +576,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81V8aLXkxsL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81V8aLXkxsL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Spontex Eponge Zéro Surfaces Délicates, 2
@@ -550,7 +596,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81YBZh64VWL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81YBZh64VWL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Spontex - Gratte-Eponge Eclats Minéraux -
@@ -569,7 +616,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/91qMDo8IDjL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/91qMDo8IDjL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">SPONTEX - Gratte-Eponge Fibres Recyclées – 6
@@ -588,7 +636,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/71ozq6iyGeL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/71ozq6iyGeL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">D.RECT Eponge Universelle - Eponge Voiture
@@ -608,11 +657,14 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/71CyKl7t87S._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/71CyKl7t87S._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">D.RECT Lot de 5 Éponges de Cuisine | à Deux Faces
-                                            | 30 x 100 x 75 mm | Multi-usages | le Pouvoir Absorbant et le Pouvoir Nettoyant
+                                        <div class="product-content-title">D.RECT Lot de 5 Éponges de Cuisine | à Deux
+                                            Faces
+                                            | 30 x 100 x 75 mm | Multi-usages | le Pouvoir Absorbant et le Pouvoir
+                                            Nettoyant
                                             | MAXI | Multicolore
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -628,11 +680,13 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/716ptDksy0L._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/716ptDksy0L._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Spontex Lot de 10 éponges de Cellulose 100%
-                                            biodégradables dans Un Sac Pet recyclé et Recyclable - Absorbant - Dimensions :
+                                            biodégradables dans Un Sac Pet recyclé et Recyclable - Absorbant -
+                                            Dimensions :
                                             135 x 90 x 37 mm
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -648,7 +702,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/91HIE2C8tOL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/91HIE2C8tOL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Éponge à récurer pour utilisation intensive
@@ -668,11 +723,13 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/91+CXXxkNML._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/91+CXXxkNML._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Scotch-Brite Delicate Éponge à Récurer en
-                                            Cellulose non Rayante , 10 Pièces - Tampon à Récurer Très Absorbant Indiqué pour
+                                            Cellulose non Rayante , 10 Pièces - Tampon à Récurer Très Absorbant Indiqué
+                                            pour
                                             les Tâches de Nettoyage Quotidiennes, Bleu - Anti-rayures
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -688,7 +745,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/91egdzl-V9L._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/91egdzl-V9L._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">SQUATCH® | Lot de 10 Éponges | Big Pack
@@ -708,7 +766,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81wY0cYmHoL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81wY0cYmHoL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Éponges à récurer, 6 pièces avec 2 crochets,
@@ -728,7 +787,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/61rry7rTSAL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/61rry7rTSAL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">EPONGENIO - MYBO TV - Lot de 5 Éponges Double
@@ -748,11 +808,14 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/71LXP49+5KL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/71LXP49+5KL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">QWORK® Lot de 3 éponges de Lavage Voiture, Grosse
-                                            Eponge, éponges de Voiture pour Le Lavage, Super absorbantes, 23 * 11 * 4.5cm
+                                        <div class="product-content-title">QWORK® Lot de 3 éponges de Lavage Voiture,
+                                            Grosse
+                                            Eponge, éponges de Voiture pour Le Lavage, Super absorbantes, 23 * 11 *
+                                            4.5cm
                                         </div>
                                         <div class="product-content-brand">Brand</div>
                                         <div class="product-content-rating">3.5 <span
@@ -767,7 +830,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/71GjzYzfdfL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/71GjzYzfdfL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">4 Eponge Reutilisable Lavable Vaisselle en
@@ -787,12 +851,15 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81PChVF47HL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81PChVF47HL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Surfela Lot de 6 Éponges Gros Vaisselle
-                                            Reutilisable et Microfibres, Non Rayants Eponge Magique Tampons Antibactérienne
-                                            Double Éponge, Plusieurs Couleurs Idéale pour Assiettes, Casseroles et Poêles
+                                            Reutilisable et Microfibres, Non Rayants Eponge Magique Tampons
+                                            Antibactérienne
+                                            Double Éponge, Plusieurs Couleurs Idéale pour Assiettes, Casseroles et
+                                            Poêles
                                         </div>
                                         <div class="product-content-brand">Brand</div>
                                         <div class="product-content-rating">4.5 <span
@@ -807,10 +874,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81t+jhH507L._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81t+jhH507L._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">MR.SIGA Lot de 6 Éponges à Vaisselle Double Face
+                                        <div class="product-content-title">MR.SIGA Lot de 6 Éponges à Vaisselle Double
+                                            Face
                                             pour Cuisine, Éponges à Récurer Réutilisables et Lavables, Gris
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -826,11 +895,14 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/61-NWHs67mL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/61-NWHs67mL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">INGA - 2 X Eponges Réutilisables Lavables - Très
-                                            Efficaces, Ne Rayent Pas - Fabriqué en Europe - Éponge Lavable Qui Dure 1 an...
+                                        <div class="product-content-title">INGA - 2 X Eponges Réutilisables Lavables -
+                                            Très
+                                            Efficaces, Ne Rayent Pas - Fabriqué en Europe - Éponge Lavable Qui Dure 1
+                                            an...
                                         </div>
                                         <div class="product-content-brand">Brand</div>
                                         <div class="product-content-rating">4.5 <span
@@ -845,7 +917,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81FUz4+RTOL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81FUz4+RTOL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">SPONTEX - Carréponge - 4 éponges Plates
@@ -864,11 +937,14 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/718DkDL48uL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/718DkDL48uL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">SPONTEX - Gratte-Eponge très Verte – 6 Éponges
-                                            Grattantes Vertes – Résistante et Eco-responsabile - Composées de Fibres 100%
+                                        <div class="product-content-title">SPONTEX - Gratte-Eponge très Verte – 6
+                                            Éponges
+                                            Grattantes Vertes – Résistante et Eco-responsabile - Composées de Fibres
+                                            100%
                                             recyclées
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -884,7 +960,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/712bM-fvGiL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/712bM-fvGiL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">MR.SIGA Lot de 4 Éponges de Nettoyage de
@@ -903,10 +980,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/81bcupOYVyL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/81bcupOYVyL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">SPONTEX - L'éponge Verte - 4 éponges grattantes
+                                        <div class="product-content-title">SPONTEX - L'éponge Verte - 4 éponges
+                                            grattantes
                                             Vertes - Economique
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -922,10 +1001,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/51AwXnXKaEL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/51AwXnXKaEL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">SPONTEX Premium Lot de 3 éponges gonflables en
+                                        <div class="product-content-title">SPONTEX Premium Lot de 3 éponges gonflables
+                                            en
                                             cellulose 100% biodégradable Noir 108 x 68 x 30-32 mm
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -941,11 +1022,14 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/61saAn3+LyL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/61saAn3+LyL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">INGA - 4 X Eponges Réutilisables Lavables - Très
-                                            Efficaces, Ne Rayent Pas - Fabriqué en Europe - Éponge Lavable Qui Dure 1 an...
+                                        <div class="product-content-title">INGA - 4 X Eponges Réutilisables Lavables -
+                                            Très
+                                            Efficaces, Ne Rayent Pas - Fabriqué en Europe - Éponge Lavable Qui Dure 1
+                                            an...
                                         </div>
                                         <div class="product-content-brand">Brand</div>
                                         <div class="product-content-rating">4.5 <span
@@ -960,7 +1044,8 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/61yqsvlZKFL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/61yqsvlZKFL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
                                         <div class="product-content-title">Amazon - Éponges à récurer (3 pièces)</div>
@@ -977,10 +1062,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/91aieVA-krL._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/91aieVA-krL._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">Spontex - Eponge Tradition - Ultra Absorbantes et
+                                        <div class="product-content-title">Spontex - Eponge Tradition - Ultra
+                                            Absorbantes et
                                             Durables - 26 Éponges (13 Paquets de 2)
                                         </div>
                                         <div class="product-content-brand">Brand</div>
@@ -996,10 +1083,12 @@
                             <div class="product-wrap">
                                 <div class="product">
                                     <div class="product-img">
-                                        <img src="https://m.media-amazon.com/images/I/91zhx3nR-8L._AC_UL320_.jpg" alt="">
+                                        <img src="https://m.media-amazon.com/images/I/91zhx3nR-8L._AC_UL320_.jpg"
+                                             alt="">
                                     </div>
                                     <div class="product-content">
-                                        <div class="product-content-title">EPONGENIO 5+1 Offert - MYBO TV - Lot de 5 éponges
+                                        <div class="product-content-title">EPONGENIO 5+1 Offert - MYBO TV - Lot de 5
+                                            éponges
                                             + 1 Offerte Double Faces Réutilisables- Lavables en Machine - Anti Rayure et
                                             Multi Surfaces- Multicolores - 11cmx17cm- Vu à la Télé
                                         </div>
