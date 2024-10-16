@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="cart-page">
+<header id="header">
+    <div class="top-header">
+        <a class="brand-logo" href="/">
+            <img src="./images/general/white-logo.png" alt="">
+        </a>
+        <a class="store-cart" href="cart.html">
+                <span class="cart-icon-wrapper">
+                    <span class="cart-products-count">0</span>
+                     <span class="cart-icon"></span>
+                </span>
+            <span class="cart-text">Cart</span>
+        </a>
+    </div>
+</header>
+<div id="main">
+
+    <div class="container-fluid">
+        <div class="row">
+            <!--     EMPTY CART   -->
+            <div class="col-lg-10 mx-auto">
+                <div class="cart-content empty">
+
+                    <div class="cart-title cart-title-empty">
+                        Your cart is empty
+                    </div>
+                    <a class="continue-shopping-button" href="/">
+                        Continue shopping
+                    </a>
+                </div>
+            </div>
+            <!--     CART HAS PRODUCTS   -->
+            <div class="col-lg-12 mx-auto">
+                <div class="cart-content">
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <div class="cart-products">
+                                <div class="cart-title">
+                                    Your basket
+                                </div>
+                                <div class="cart-products-list">
+                                    <div class="headline text-right">
+                                        price
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="cart-sidebar">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer id="footer">
+
+</footer>
+</body>
+</html>
